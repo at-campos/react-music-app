@@ -1,0 +1,27 @@
+$musicGray: #181515;
+$warmWinds: #6a534f;
+
+$titleFontFamily: 'Google Sans';
+
+body {
+    margin: 0;
+    background-color: $musicGray;
+}
+
+.header {
+    background-color: $musicGray;
+    height: 5em;
+    align-content: center;
+    border-bottom-width: 1px;
+    border-bottom-color: $warmWinds;
+    border-bottom-style: solid;
+    box-shadow: #d8d5d5;
+
+    &__title{
+        padding-left: 1em;
+        font-size: 25;
+        color: white;
+        font-family: $titleFontFamily;
+        cursor: pointer;
+    }
+}

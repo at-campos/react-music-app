@@ -1,31 +1,40 @@
 // Temporary scss...
-$stormCloud: #4F666A;
-$warmWinds: #6a534f;
-$titleFontFamily: 'Audiowide';
 
-body {
-    margin: 0;
-}
+$coffeCream: rgba(211, 194, 191, 0.5);
+$fontFamily: 'Google Sans';
 
-header {
-    background-color: $stormCloud;
-    height: 6em;
-    text-align: right;
-    align-content: center;
-    
-    h1{
-        padding-right: 1em;
-        color: white;
-        font-family: $titleFontFamily;
-        cursor: pointer;
+.songCard {
+    display: flex;
+    background-color: rgb(59, 56, 56);
+    font-family: $fontFamily;
+    border-bottom: $coffeCream;
+    border-bottom-width: 1px;
+    border-bottom-style: ridge;
+    height: 5em;
+
+    &__cover{
+        height: 60px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1em;
+        margin-right: 1em;
     }
-}
 
-.header {
-    &__vanity{
-        width: 100%;
-        height: 12px;
-        margin: 0;
-        background-color: $warmWinds;
+
+    &__title{
+        font-weight: 600;
+        color:white;
+        align-content: end;
+    }
+
+    &__artist {
+        color: $coffeCream;
+    }
+
+    &__duration{
+        align-content: center;
+        color: $coffeCream;
+        margin-left: auto;
+        padding-right: 2em;
     }
 }

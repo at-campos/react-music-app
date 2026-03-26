@@ -1,1 +1,21 @@
-/*# sourceMappingURL=index.css.map */
+body {
+  margin: 0;
+  background-color: #181515;
+}
+
+.header {
+  background-color: #181515;
+  height: 5em;
+  align-content: center;
+  border-bottom-width: 1px;
+  border-bottom-color: #6a534f;
+  border-bottom-style: solid;
+  box-shadow: #d8d5d5;
+}
+.header__title {
+  padding-left: 1em;
+  font-size: 25;
+  color: white;
+  font-family: "Google Sans";
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

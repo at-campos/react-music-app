@@ -23,7 +23,28 @@ El CSS va a ser reemplazado a futuro por estilos de React, así que es muy bási
 
 ***
 # Entrega 2: Refactorización
-A desarrollar.
+
+### Objetivo:
+
+### Refactorización
+Refactorizar los componentes previos de clase a funcionales (Header y Song)
+
+### Nuevas funcionalidades
+
+**SearchResults.js:** Recibe un array de canciones ficticias como prop, itera usando map y renderiza cada canción utilizando Song.js. Cada canción tiene una key única.
+
+**Library.js:** Recibe un array de canciones ficticias como prop, itera usando map y renderiza las canciones en la biblioteca.
+
+**Botones para agregar canciones a biblioteca:** A cada canción de SearchResults se le agrega un botón "Agregar a mi biblioteca", este botón añade la canción al estado de Library.js. Con useState actualiza dinámicamente el estado de la biblioteca.
+
+## Manejo de estado en App
+(A desarrollar: uso de useState con los resultados de busqueda y biblioteca, imprimir un mensaje al actualizar biblioteca)
+
+## Integración de los componentes nuevos
+Revisar si la lista de resultados de búsqueda suma correctamente canciones a la biblioteca.
+
+## Estilizar elementos nuevos
+Estilizar SearchResults.js, Library.js y los botones nuevos.
 
 ***
 # Entrega 3: Integración de API

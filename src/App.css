@@ -1,6 +1,26 @@
+.library__title, .searchResults__title {
+  font-family: "Google Sans";
+  color: #FFF;
+  margin-left: 1em;
+}
+
+.App__container {
+  display: flex;
+  gap: 5px;
+}
+
+.searchResults {
+  flex-grow: 1;
+  background-color: #1f1d1d;
+}
+.library {
+  flex-grow: 2;
+  background-color: #6a534f;
+  border-radius: 15px;
+}
 .songCard {
   display: flex;
-  background-color: rgb(59, 56, 56);
+  background-color: #3b3838;
   font-family: "Google Sans";
   border-bottom: rgba(211, 194, 191, 0.5);
   border-bottom-width: 1px;

@@ -1,11 +1,42 @@
 // Temporary scss...
-
+$warmWinds: #6a534f;
 $coffeCream: rgba(211, 194, 191, 0.5);
 $fontFamily: 'Google Sans';
 
+%textStyle {
+    font-family: $fontFamily;
+    color: #FFF;
+    margin-left: 1em;
+}
+
+.App{
+    &__container{
+        display: flex;
+        gap: 5px;
+    }
+}
+
+.searchResults {
+    flex-grow: 1;
+    background-color: #1f1d1d;
+
+    &__title{
+        @extend %textStyle;
+    }
+}
+
+.library {
+    flex-grow: 2;
+    background-color: $warmWinds;
+    border-radius: 15px;
+    &__title{
+        @extend %textStyle;
+    }
+}
+
 .songCard {
     display: flex;
-    background-color: rgb(59, 56, 56);
+    background-color: #3b3838;
     font-family: $fontFamily;
     border-bottom: $coffeCream;
     border-bottom-width: 1px;
@@ -38,3 +69,4 @@ $fontFamily: 'Google Sans';
         padding-right: 2em;
     }
 }
+

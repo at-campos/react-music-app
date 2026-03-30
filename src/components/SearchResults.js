@@ -1,11 +1,22 @@
+import React, { useState, useEffect } from "react";
 import Song from "./Song";
 
 const SearchResults = () => {
-    const songs = [
-        {id: 1, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"},
-        {id: 2, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"},
-        {id: 3, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"}
-    ];
+    const [songs, setSongs] = useState([]);
+
+    useEffect(() => {
+        const fetchSongs = async () => {
+            const response = [   
+                {id: 1, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"},
+                {id: 2, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"},
+                {id: 3, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"}
+            ];
+
+            setSongs(response);
+        }
+
+        fetchSongs();
+    }, [])
 
     return(
         <section className="searchResults">

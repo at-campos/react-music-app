@@ -1,11 +1,8 @@
+import React, { useState } from "react";
 import Song from "./Song";
 
 const Library = () => {
-    const songs = [
-        {id: 1, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"},
-        {id: 2, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"},
-        {id: 3, title:"Discipline", artist: "Nine Inch Nails", duration: "3:00"}
-    ];
+    const [songs, setSongs] = useState([]);
 
     return(
         <>

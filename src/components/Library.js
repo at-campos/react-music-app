@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import Song from "./Song";
 
-const Library = () => {
-    const [songs, setSongs] = useState([]);
+const Library = ({songs}) => {
 
     return(
         <>
@@ -13,7 +11,7 @@ const Library = () => {
                         const { id, title, artist, duration } = song;
 
                         return(
-                            <Song id= {id} title={title} artist= {artist} duration={duration} />
+                            <Song id={id} title={title} artist= {artist} duration={duration} addButton={Boolean(false)}/>
                         )
                     })
                 }

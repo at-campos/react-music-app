@@ -68,5 +68,19 @@ $fontFamily: 'Google Sans';
         margin-left: auto;
         padding-right: 2em;
     }
+
+    &__Btn {
+        &-add {
+            background-color: #1c811c;
+            border: none;
+            cursor: pointer;
+        }
+
+        &-remove{
+            background-color: #ca5050;
+            border: none;
+            cursor: pointer;
+        }
+    }
 }
 

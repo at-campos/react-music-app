@@ -6,12 +6,11 @@ const Song = ({ id, title, artist, duration, addButton, setHandler} ) => {
 
     const AddDeleteBtn = (buttonCheck) => {
         function handleClickAdd() {
-            alert('Funciona: ' + id);
             setHandler(id);
         }
 
         function handleClickDelete() {
-            alert('Funcasdsiona');
+            alert("Feature a desarrollar");
         }
         if(buttonCheck.buttonCheck === true){
             return <button className='songCard__Btn-add' onClick={handleClickAdd}><img src={add} /></button>;

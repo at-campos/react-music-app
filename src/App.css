@@ -47,4 +47,14 @@
   color: rgba(211, 194, 191, 0.5);
   margin-left: auto;
   padding-right: 2em;
+}
+.songCard__Btn-add {
+  background-color: #1c811c;
+  border: none;
+  cursor: pointer;
+}
+.songCard__Btn-remove {
+  background-color: #ca5050;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

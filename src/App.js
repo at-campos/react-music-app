@@ -50,7 +50,7 @@ function App() {
       <Header appName="Music App" />
       <div className="App__container">
         <SearchResults results={[...results]} songs={[...songs]} setSongs={setSongs} duplicateHandler={duplicateHandler}/>
-        <Library songs={[...songs]}/>
+        <Library songs={[...songs]} setSongs={setSongs}/>
       </div>
       
     </div>

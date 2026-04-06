@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Song from "./Song";
 
-const SearchResults = ({results}) => {
+const SearchResults = ({results, songs, setSongs, duplicateHandler}) => {
+
+    const setHandler = (songKey) => {
+        for (let song of results){
+            if(!duplicateHandler(songKey)){
+                if(song.id === songKey){
+                    setSongs([...songs.concat(song)])
+                }
+            }
+        }
+        //esto podria hacerse con un reduce tambien...
+        
+    }
 
     return(
         <section className="searchResults">
@@ -11,7 +23,7 @@ const SearchResults = ({results}) => {
                 const { id, title, artist, duration } = results;
 
                 return(
-                    <Song key={id} title={title} artist= {artist} duration={duration} addButton={Boolean(true)}/>
+                    <Song key={id} id={id} title={title} artist= {artist} duration={duration} addButton={Boolean(true)} setHandler={setHandler}/>
                 )
             })
         }

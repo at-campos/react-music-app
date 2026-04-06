@@ -1,15 +1,22 @@
-import React from 'react';
 import cover from './disc.svg';
 import add from './plus-circle.svg';
 import remove from './trash.svg'
 
-const Song = ({ title, artist, duration, addButton}) => {
+const Song = ({ id, title, artist, duration, addButton, setHandler} ) => {
 
     const AddDeleteBtn = (buttonCheck) => {
+        function handleClickAdd() {
+            alert('Funciona: ' + id);
+            setHandler(id);
+        }
+
+        function handleClickDelete() {
+            alert('Funcasdsiona');
+        }
         if(buttonCheck.buttonCheck === true){
-            return <button><img src={add} /></button>;
+            return <button className='songCard__Btn-add' onClick={handleClickAdd}><img src={add} /></button>;
         } else {
-            return <button><img src={remove} /></button>;
+            return <button className='songCard__Btn-remove' onClick={handleClickDelete}><img src={remove} /></button>;
         }
     }
 

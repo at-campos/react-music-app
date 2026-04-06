@@ -11,7 +11,7 @@ const Library = ({songs}) => {
                         const { id, title, artist, duration } = song;
 
                         return(
-                            <Song id={id} title={title} artist= {artist} duration={duration} addButton={Boolean(false)}/>
+                            <Song key={id} id={id} title={title} artist= {artist} duration={duration} addButton={Boolean(false)}/>
                         )
                     })
                 }

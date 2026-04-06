@@ -1,6 +1,26 @@
+.library__title, .searchResults__title {
+  font-family: "Google Sans";
+  color: #FFF;
+  margin-left: 1em;
+}
+
+.App__container {
+  display: flex;
+  gap: 5px;
+}
+
+.searchResults {
+  flex-grow: 1;
+  background-color: #1f1d1d;
+}
+.library {
+  width: 60%;
+  background-color: #6a534f;
+  border-radius: 15px;
+}
 .songCard {
   display: flex;
-  background-color: rgb(59, 56, 56);
+  background-color: #3b3838;
   font-family: "Google Sans";
   border-bottom: rgba(211, 194, 191, 0.5);
   border-bottom-width: 1px;
@@ -27,4 +47,14 @@
   color: rgba(211, 194, 191, 0.5);
   margin-left: auto;
   padding-right: 2em;
+}
+.songCard__Btn-add {
+  background-color: #1c811c;
+  border: none;
+  cursor: pointer;
+}
+.songCard__Btn-remove {
+  background-color: #ca5050;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */

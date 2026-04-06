@@ -38,7 +38,10 @@ Refactorizar los componentes previos de clase a funcionales (Header y Song)
 **Botones para agregar canciones a biblioteca:** A cada canción de SearchResults se le agrega un botón "Agregar a mi biblioteca", este botón añade la canción al estado de Library.js. Con useState actualiza dinámicamente el estado de la biblioteca.
 
 ## Manejo de estado en App
-(A desarrollar: uso de useState con los resultados de busqueda y biblioteca, imprimir un mensaje al actualizar biblioteca)
+Integrar los hooks como forma de manejo de los estados de la app:
+**SearchResults.js:** Los resultados de búsqueda.
+
+**Library.js:** La biblioteca (inicialmente vacía)
 
 ## Integración de los componentes nuevos
 Revisar si la lista de resultados de búsqueda suma correctamente canciones a la biblioteca.

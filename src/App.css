@@ -14,7 +14,7 @@
   background-color: #1f1d1d;
 }
 .library {
-  flex-grow: 2;
+  width: 60%;
   background-color: #6a534f;
   border-radius: 15px;
 }

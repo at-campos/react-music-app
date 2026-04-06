@@ -22,17 +22,7 @@ function App() {
             setResults(response);
         }
 
-        const tempPopulate = () => {
-          const placeholder = [
-                {id: 4, title:"a", artist: "asddfs", duration: "3:00"},
-                {id: 5, title:"xzcv", artist: "sdfsd", duration: "3:00"},
-          ];
-
-          setSongs(placeholder);
-        }
-
         fetchSongs();
-        tempPopulate();
     }, [])
 
   const duplicateHandler = (key) => {
